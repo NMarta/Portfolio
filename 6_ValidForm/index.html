@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="box">
+      <h1>Please sing up</h1>
+      <div id="forma">
+        <input id="firstName" type="text" value="" placeholder="First name" />
+        <p id="notValueFirstName">Value is empty</p>
+        <input id="lastName" type="text" value="" placeholder="Last name" />
+        <p id="notValueLastName">Value is empty</p>
+        <input id="email" type="text" value="" placeholder="Email address" />
+        <p id="notValueEmail">Value is empty</p>
+        <input id="password" type="password" value="" placeholder="Password" />
+        <p id="notValuePassword">Value is empty</p>
+        <button id="singUpInForma" onclick="ButtonSingUp()">Sing Up</button>
+        <h4 id="singInnow" onclick="OvenFormaSing()">Sing In now</h4>
+      </div>
+      <div id="formaSing">
+        <input
+          id="emailSingUp"
+          type="text"
+          value=""
+          placeholder="Email address"
+        />
+        <input
+          id="passwordSingUp"
+          type="password"
+          value=""
+          placeholder="Password"
+        />
+        <p id="text">Incorrect email or password</p>
+        <button id="singUp" onclick="CheckValue()">Sing Up</button>
+        <h4 id="singUpnow" onclick="OvenForma()">Sing Up now</h4>
+      </div>
+    </div>
+    <div id="user">
+      <img src="./img/user.jpg" />
+      <h2 id="userH2"></h2>
+      <h3 id="userEmal"></h3>
+      <h2>Designer & Web Developing</h2>
+      <hr />
+      <button id="singUpInUser" onclick="ReturnPageForm()">Sing Up</button>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

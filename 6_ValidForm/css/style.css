@@ -1,0 +1,84 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightgray;
+}
+#box,
+#user {
+  width: 450px;
+  margin: 50px auto;
+}
+input,
+button {
+  background-color: white;
+  border-radius: 4px;
+  padding: 15px 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+h1,
+h2,
+h3,
+h4,
+input,
+p,
+button {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+p {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  /* display: inline; */
+  display: none;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: blue;
+}
+button {
+  color: white;
+  font-weight: 700;
+}
+#singUpInForma {
+  background-color: blue;
+}
+#singUp,
+#singUpInUser {
+  background-color: green;
+}
+img {
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  margin: 0px auto;
+}
+hr {
+  width: 30%;
+  margin: 10px auto;
+}
+#formaSing,
+#user {
+  display: none;
+}
+#user {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+#userH2,
+#userEmal,
+h2 {
+  color: darkgray;
+  margin: 10px;
+  text-align: center;
+}
