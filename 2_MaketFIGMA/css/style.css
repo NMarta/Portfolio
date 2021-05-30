@@ -1,0 +1,265 @@
+/* font-family: 'Kanit', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+.container {
+  width: 1440px;
+  margin: 0px auto;
+}
+.header {
+  color: white;
+  position: relative;
+}
+.logo {
+  display: flex;
+  width: 10%;
+  margin: 45px auto;
+}
+
+/*ul_white*/
+a {
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+li {
+  list-style-type: none;
+  padding-bottom: 15px;
+  margin: auto 65px;
+}
+header > i {
+  position: absolute;
+  margin: 0px 0px 45px 45px;
+  font-size: 30px;
+}
+header > ul {
+  background-color: white;
+  position: absolute;
+  display: none;
+  width: 344px;
+  height: 359px;
+  padding-top: 45px;
+  margin: 35px 45px 45px 45px;
+}
+
+header:hover ul {
+  display: block;
+}
+
+/*container*/
+.h1_white,
+.p_date,
+.p_date_name,
+.text_white {
+  font-family: "Kanit", sans-serif;
+  color: white;
+}
+
+.container_big_img_text > img {
+  width: 50%;
+}
+.container_text_do_big_img {
+  width: 50%;
+}
+.p_date {
+  font-size: 14px;
+  letter-spacing: 7px;
+  font-weight: 700;
+}
+.p_date_name {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.container_big_img_text_date {
+  margin: 110px 80px 80px 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.h1_white {
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: 110px;
+  margin-bottom: 30px;
+}
+.text_white {
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 110px;
+  margin-bottom: 60px;
+}
+.button_container_big_img_text {
+  padding: 20px 60px;
+  border: 1px solid white;
+  margin-left: 110px;
+  font-family: "Kanit", sans-serif;
+  color: white;
+  font-size: 12px;
+  font-style: 500;
+  background-color: black;
+}
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+.container_text_do_big_img {
+  background-color: #000;
+  width: 50%;
+}
+.container_big_img_text {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*container_2img*/
+.p_date_black,
+.p_date_name_black,
+.h1_black,
+.text_black,
+.h1_black_small,
+h2 {
+  font-family: "Kanit", sans-serif;
+  color: black;
+  font-weight: 500;
+}
+.date {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  width: 96%;
+}
+.p_date_black {
+  font-size: 12px;
+  letter-spacing: 6px;
+}
+.p_date_name_black {
+  font-size: 12px;
+  text-decoration: underline;
+}
+.h1_black {
+  font-size: 24px;
+  font-weight: 700;
+  width: 96%;
+  margin-bottom: 35px;
+}
+.text_black {
+  width: 96%;
+  font-size: 18px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 18;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.container_2_imgs {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin-bottom: 70px;
+}
+
+/*container_3img*/
+.h1_black_small {
+  font-size: 18px;
+  font-weight: 700;
+}
+.date_small_imgs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.p_date_black_small_imgs {
+  font-family: "Kanit", sans-serif;
+  font-size: 12px;
+  letter-spacing: 6px;
+}
+.p_date_name_black_small_imgs {
+  font-family: "Kanit", sans-serif;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.container_small_imgs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+/*button*/
+.button_see_all {
+  background-color: #303030;
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+  color: white;
+  padding: 20px 90px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container_2img_next > img {
+  width: 50%;
+}
+.container_text_do_big_img_next {
+  width: 50%;
+  background-color: black;
+}
+.p_big_white {
+  font-family: "Kanit", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: white;
+  margin: 135px 140px 30px 115px;
+}
+.button_container_big_img_next {
+  padding: 15px 45px;
+  border: 1px solid white;
+  font-family: "Kanit", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-style: 700;
+  background-color: black;
+  margin-left: 185px;
+}
+/* .button_next{
+  margin: auto 0px;
+} */
+.container_2img_next {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 0;
+}
+
+.icons > ul:hover {
+  display: block;
+  position: relative;
+}
+.small_contaiger {
+  width: 1140px;
+  margin: 65px auto;
+}
+.logo_footer {
+  display: flex;
+  width: 10%;
+  margin: 0px auto;
+}
+.avtor {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  padding-top: 40px;
+}
+footer {
+  height: 140px;
+  padding-top: 45px;
+  background-color: black;
+}
+ul {
+  position: relative;
+}
