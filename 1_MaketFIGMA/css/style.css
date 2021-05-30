@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+@font-face {
+  font-family: "bahij-sultannahia";
+  src: url("../fonts/bahij-sultannahia.ttf");
+  src: local("☺"), url("../fonts/bahij-sultannahia.woff") format("woff"),
+    url("../fonts/bahij-sultannahia.ttf") format("truetype"),
+    url("../fonts/bahij-sultannahia.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ChronicaPro-Regular";
+  src: url("../fonts/ChronicaPro-Regular.ttf");
+  src: local("☺"), url("../fonts/ChronicaPro-Regular.woff") format("woff"),
+    url("../fonts/ChronicaPro-Regular.ttf") format("truetype"),
+    url("../fonts/ChronicaPro-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.header_text {
+  align-content: center;
+  font-family: "bahij-sultannahia";
+  font-size: 30px;
+  padding: 25px 50px;
+  text-decoration-line: none;
+  color: black;
+}
+.container {
+  background-color: #eaebed;
+  border-radius: 16px;
+  display: flex;
+  padding: 30px;
+  width: 100%;
+}
+
+.container_img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 16px;
+  width: 70px;
+  height: 100%;
+  margin: auto 10px;
+  padding: 20px 0px;
+}
+
+i {
+  font-size: 35px;
+  line-height: 55px;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+
+i:hover {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 16px;
+  text-align: left;
+}
+.i_p {
+  overflow: hidden;
+  height: 55px;
+  text-align: center;
+}
+.i_p > p {
+  font-family: "ChronicaPro-Regular";
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  list-style: none;
+  text-decoration-line: none;
+}
+
+.i_p:hover {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: blue;
+  border-radius: 16px;
+  color: white;
+  overflow: none;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  margin-left: 120px;
+}
+.container_a,
+.container_b,
+.container_c,
+.container_d,
+.container_e {
+  background-color: white;
+  border-radius: 16px;
+  margin: 20px;
+  padding: 20px;
+}
+.container_a,
+.container_b {
+  width: 50%;
+}
+
+.container_cd {
+  width: 52%;
+}
+.container_e {
+  width: 48%;
+}
+.container_name {
+  font-family: "bahij-sultannahia";
+  font-size: 30px;
+}
+.container_text {
+  font-family: "ChronicaPro-Regular";
+  font-size: 20px;
+  color: lightgray;
+}
+
+.container_ab,
+.container_cde {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.container_d > img {
+  width: 15%;
+  float: left;
+  margin-right: 10px;
+}
+
+.container_e > img {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}

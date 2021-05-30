@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+@font-face {
+  font-family: "bahij-sultannahia";
+  src: url("../fonts/bahij-sultannahia.ttf");
+  src: local("☺"), url("../fonts/bahij-sultannahia.woff") format("woff"),
+    url("../fonts/bahij-sultannahia.ttf") format("truetype"),
+    url("../fonts/bahij-sultannahia.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ChronicaPro-Regular";
+  src: url("../fonts/ChronicaPro-Regular.ttf");
+  src: local("☺"), url("../fonts/ChronicaPro-Regular.woff") format("woff"),
+    url("../fonts/ChronicaPro-Regular.ttf") format("truetype"),
+    url("../fonts/ChronicaPro-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header_text {
+  align-content: center;
+  font-family: "bahij-sultannahia";
+  font-size: 30px;
+  padding: 25px 50px;
+  text-decoration-line: none;
+  color: black;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #eaebed;
+  border-radius: 16px;
+  padding: 30px;
+}
+.СС {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_ {
+  background-color: white;
+  width: 23%;
+  min-height: 300px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+img {
+  width: 120px;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.container_img_text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.container_name {
+  font-family: "bahij-sultannahia";
+  font-size: 25px;
+  text-align: center;
+}
+.container_text {
+  font-family: "ChronicaPro-Regular";
+  font-size: 18px;
+  color: lightgray;
+  margin-top: 20px;
+  text-align: center;
+}
+.container_TEXT {
+  font-family: "ChronicaPro-Regular";
+  font-size: 18px;
+  color: lightgray;
+  text-transform: uppercase;
+  text-align: center;
+}
+.container_4 {
+  position: relative;
+}
+.img_container_4 {
+  display: none;
+}
+.container_4:hover {
+  background-color: blue;
+}
+.container_img_text:hover .img_container_4 {
+  display: flex;
+  position: absolute;
+  left: 240px;
+  bottom: 270px;
+  width: 50px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.container_4 > .container_img_text p:hover {
+  color: white;
+}

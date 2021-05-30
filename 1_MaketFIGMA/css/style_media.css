@@ -1,0 +1,86 @@
+@media (max-width: 1200px) {
+  .container11 {
+    max-width: 970px;
+    margin: 0px auto;
+  }
+  .container_4 > img {
+    display: none;
+  }
+  th,
+  td {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 992px) {
+  .container11 {
+    max-width: 750px;
+    margin: 0px auto;
+  }
+  /*FORMA*/
+  .forma,
+  .form,
+  .container_1,
+  .container_2,
+  .container_3,
+  .container_3_ {
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 20px;
+  }
+  /*TEAM*/
+  .container_ {
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .container_4 > img {
+    display: none;
+  }
+  .container_img_text {
+    display: block;
+    margin: 0px auto;
+    margin-top: 30px;
+  }
+  table {
+    font-size: 24;
+  }
+  th,
+  td {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .container11 {
+    max-width: 550px;
+    margin: 0px auto;
+  }
+  .container2 {
+    margin-right: 20px;
+  }
+  .container_ab,
+  .container_cd,
+  .container_cde {
+    display: block;
+  }
+  .container_a,
+  .container_b,
+  .container_c,
+  .container_d,
+  .container_cd,
+  .container_e {
+    display: block;
+    width: 100%;
+    margin-right: 50px;
+  }
+}
