@@ -1,0 +1,282 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+/* div */
+
+.first,
+.third {
+  background-color: lightgray;
+  border: 2px solid darkgray;
+  border-radius: 16px;
+  padding: 50px;
+  height: auto;
+  position: relative;
+}
+
+.third {
+  height: 345px;
+}
+
+.second {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+  width: 98%;
+  margin: 20px auto;
+  height: 150px;
+  background-color: white;
+  display: none;
+  line-height: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* buttons */
+
+#buttonEdit,
+#buttonStyle,
+#buttonAdd,
+#buttonSave,
+#buttonCreateTable,
+#buttonCreateList {
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
+
+#buttonEdit {
+  background-color: orange;
+  border: 2px solid darkorange;
+  margin-right: 20px;
+}
+
+#buttonStyle {
+  background-color: blue;
+  border: 2px solid darkblue;
+}
+
+#buttonAdd {
+  background-color: red;
+  border: 2px solid darkred;
+  margin-right: 20px;
+}
+
+#buttonSave,
+#buttonCreateTable,
+#buttonCreateList {
+  background-color: green;
+  border: 2px solid darkgreen;
+}
+
+#buttonAddSave {
+  display: none;
+}
+
+/* forma */
+
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgb(75, 75, 75);
+}
+
+.font_size,
+#forma > label,
+select,
+#colorOfText,
+#backgroundColor {
+  margin-bottom: 15px;
+}
+
+.font_size,
+.font_style {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-right: 2px;
+}
+
+select {
+  width: 270px;
+  font-size: 14px;
+  height: 30px;
+}
+
+#colorOfText,
+#backgroundColor {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  background-color: gray;
+}
+
+#colorOfText {
+  margin-right: 10px;
+}
+
+#forma {
+  display: none;
+}
+
+/* ColotOftext */
+
+.div,
+.div1 {
+  border: 1px solid black;
+  width: 75px;
+  height: 75px;
+}
+
+.div_1,
+.div_2,
+.div_3 {
+  display: flex;
+}
+
+#div_9color,
+#div_9backgroundColor {
+  position: absolute;
+  bottom: 90px;
+  left: 650px;
+  width: 225px;
+  display: none;
+}
+
+#color1,
+#color11 {
+  background-color: red;
+}
+
+#color2,
+#color12 {
+  background-color: yellow;
+}
+
+#color3,
+#color13 {
+  background-color: orange;
+}
+
+#color4,
+#color14 {
+  background-color: lightgreen;
+}
+
+#color5,
+#color15 {
+  background-color: yellowgreen;
+}
+
+#color6,
+#color16 {
+  background-color: green;
+}
+
+#color7,
+#color17 {
+  background-color: lightskyblue;
+}
+
+#color8,
+#color18 {
+  background-color: blue;
+}
+
+#color9,
+#color19 {
+  background-color: gray;
+}
+
+/* table */
+h1,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#divForAdd {
+  display: none;
+}
+#font_size_lable_table,
+#font_size_lable_list {
+  font-size: 16px;
+}
+.input_answer_on_table {
+  margin-bottom: 25px;
+}
+.label_table {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: block;
+}
+.label_table_input {
+  padding: 3px 15px;
+  width: 80%;
+  position: absolute;
+  justify-content: center;
+  right: 50px;
+}
+.input_answer_on_table_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.label_table_select_footer {
+  width: 200px;
+}
+.label_table_input_footer {
+  padding: 3px 15px;
+  width: 200px;
+  margin-left: 26px;
+}
+#clickOnAdd_table {
+  margin-top: 25px;
+  display: none;
+}
+table {
+  border: 1px solid black;
+}
+#clickOnAdd_list {
+  margin: 20px 0px;
+}
+#buttonCreateList {
+  display: block;
+}
+
+/* li */
+.label_li_select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label_li_select_ {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-top: 22px;
+}
+
+#marks {
+  margin: 20px 0px;
+  width: 87.3%;
+}
+
+#clickOnAdd_list {
+  display: none;
+}

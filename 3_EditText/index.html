@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="body">
+    <div class="first" id="text1">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="first" id="divForAdd">
+      <h1>Choose what you want:</h1>
+      <label class="font_size" id="font_size_lable_table">
+        <input type="radio" name="answer" id="add_table" />
+        table
+      </label>
+      <label class="font_size" id="font_size_lable_list">
+        <input type="radio" name="answer" id="add_list" />
+        list
+      </label>
+      <div id="clickOnAdd_table">
+        <div class="input_answer_on_table">
+          <label class="label_table"
+            >Count TR:<input
+              type="text"
+              placeholder="Count TR:"
+              id="countTR"
+              class="label_table_input"
+              value=""
+          /></label>
+        </div>
+        <div class="input_answer_on_table">
+          <label class="label_table"
+            >Count TD:<input
+              type="text"
+              placeholder="Count TD:"
+              id="countTD"
+              class="label_table_input"
+              value=""
+          /></label>
+        </div>
+        <h2>Add style to your table:</h2>
+        <div class="input_answer_on_table">
+          <label class="label_table"
+            >Width of TR:<input
+              type="text"
+              placeholder="Width of TR: 200px"
+              id="widthOfTR"
+              class="label_table_input"
+              value=""
+          /></label>
+        </div>
+        <div class="input_answer_on_table">
+          <label class="label_table"
+            >Height of TD:<input
+              type="text"
+              placeholder="Height of TD: 200px"
+              id="heightOfTD"
+              class="label_table_input"
+              value=""
+          /></label>
+        </div>
+        <div>
+          <div class="input_answer_on_table_footer">
+            <label class="label_table"
+              >Width of border:<input
+                type="text"
+                placeholder="Width: 2px"
+                id="WidthBorder"
+                class="label_table_input_footer"
+                value=""
+            /></label>
+            <label class="label_table">Type of border:</label>
+            <select class="label_table_select_footer" id="borderStyle">
+              <option id="borderSolid" value="solid">solid</option>
+              <option id="borderNone" value="none">none</option>
+              <option id="borderDotted" value="dotted">dotted</option>
+            </select>
+            <label class="label_table">Color of border:</label>
+            <select class="label_table_select_footer" id="borderColor">
+              <option id="boderBlack" value="black">black</option>
+              <option id="borderGray" value="gray">gray</option>
+              <option id="borderWhite" value="red">red</option>
+            </select>
+          </div>
+        </div>
+        <button id="buttonCreateTable">Create table</button>
+      </div>
+
+      <div id="clickOnAdd_list">
+        <label class="label_table"
+          >Count li:<input
+            type="text"
+            placeholder="Count Li:"
+            id="countLi"
+            class="label_table_input"
+            value=""
+        /></label>
+        <div class="label_li_select">
+          <label class="label_li_select_">Type of marks:</label>
+          <select id="marks">
+            <option value="circle">circle</option>
+            <option value="disc">disc</option>
+            <option value="square">square</option>
+          </select>
+        </div>
+        <button id="buttonCreateList">Create list</button>
+      </div>
+    </div>
+    <div class="second" id="second">
+      <button id="buttonEdit">Edit</button>
+      <button id="buttonStyle">Style</button>
+    </div>
+    <div class="third" id="third">
+      <textarea id="text"></textarea>
+      <div id="buttonAddSave">
+        <button id="buttonAdd">Add</button>
+        <button id="buttonSave">Save</button>
+      </div>
+
+      <form id="forma">
+        <h6>Font Size:</h6>
+        <label class="font_size">
+          <input type="radio" name="answer" value="12" id="value12" />
+          12px</label
+        >
+        <label class="font_size">
+          <input type="radio" name="answer" value="14" id="value14" />
+          14px</label
+        >
+        <label class="font_size">
+          <input type="radio" name="answer" value="16" id="value16" />
+          16px</label
+        >
+        <label class="font_size">
+          <input type="radio" name="answer" value="18" id="value18" />
+          18px</label
+        >
+        <label class="font_size">
+          <input type="radio" name="answer" value="20" id="value20" />
+          20px</label
+        >
+        <h6>Font Family:</h6>
+        <select>
+          <option id="classic">Classic</option>
+          <option id="cursive">Cursive</option>
+          <option id="fantasy">Fantasy</option>
+          <option id="monospace">Monospace</option>
+          <option id="sans-serif">Sans-serif</option>
+        </select>
+        <h6>Colors:</h6>
+        <input type="button" id="colorOfText" value="Color of Text" />
+        <input type="button" id="backgroundColor" value="Background color" />
+
+        <div id="div_9color">
+          <div class="div_1">
+            <div class="div" id="color1"></div>
+            <div class="div" id="color2"></div>
+            <div class="div" id="color3"></div>
+          </div>
+          <div class="div_2">
+            <div class="div" id="color4"></div>
+            <div class="div" id="color5"></div>
+            <div class="div" id="color6"></div>
+          </div>
+          <div class="div_3">
+            <div class="div" id="color7"></div>
+            <div class="div" id="color8"></div>
+            <div class="div" id="color9"></div>
+          </div>
+        </div>
+
+        <div id="div_9backgroundColor">
+          <div class="div_1">
+            <div class="div1" id="color11"></div>
+            <div class="div1" id="color12"></div>
+            <div class="div1" id="color13"></div>
+          </div>
+          <div class="div_2">
+            <div class="div1" id="color14"></div>
+            <div class="div1" id="color15"></div>
+            <div class="div1" id="color16"></div>
+          </div>
+          <div class="div_3">
+            <div class="div1" id="color17"></div>
+            <div class="div1" id="color18"></div>
+            <div class="div1" id="color19"></div>
+          </div>
+        </div>
+        <h6>Style:</h6>
+        <label class="font_style">
+          <input type="checkbox" id="checBold" />Bold text</label
+        >
+        <label class="font_style">
+          <input type="checkbox" id="checCurs" />Cursive text</label
+        >
+      </form>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
