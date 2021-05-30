@@ -1,0 +1,376 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#openlock {
+  display: none;
+}
+
+body,
+.buttonOpenColorImagexBack,
+#selectFont,
+#selectFontSize {
+  background-color: rgb(241, 229, 229);
+}
+header {
+  height: 100px;
+  background-color: rgb(59, 53, 53);
+}
+.textButtons {
+  padding: 5px 10px;
+  background-color: none;
+  font-size: 20px;
+  border: none;
+  margin: 0px;
+}
+.boxButtons1,
+.boxButtons2,
+.boxButtons3,
+.boxButtons4,
+.boxButtons5,
+.boxButtons6 {
+  border: 3px solid darkgray;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+#buttonHeader,
+#buttonsSing {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  padding: 50px;
+}
+#selectFont,
+#selectFontSize {
+  position: absolute;
+  z-index: 10;
+  display: none;
+  border: 3px solid rgb(59, 53, 53);
+}
+#selectFont {
+  left: 730px;
+  width: 150px;
+}
+#selectFontSize {
+  left: 850px;
+  width: 70px;
+}
+
+/* colortext */
+#darkred,
+#Bdarkred {
+  background-color: darkred;
+}
+#darkorange,
+#Bdarkorange {
+  background-color: darkorange;
+}
+#darkyellow,
+#Bdarkyellow {
+  background-color: yellowgreen;
+}
+#darkgreen,
+#Bdarkgreen {
+  background-color: darkgreen;
+}
+#darkblue,
+#Bdarkblue {
+  background-color: darkblue;
+}
+#darkgray,
+#Bdarkgray {
+  background-color: darkgray;
+}
+#red,
+#Bred {
+  background-color: red;
+}
+#orange,
+#Borange {
+  background-color: orange;
+}
+#yellow,
+#Byellow {
+  background-color: yellow;
+}
+#green,
+#Bgreen {
+  background-color: green;
+}
+#blue,
+#Bblue {
+  background-color: blue;
+}
+#gray,
+#Bgray {
+  background-color: gray;
+}
+#lightpink,
+#Blightpink {
+  background-color: lightpink;
+}
+#lightsalmon,
+#Blightsalmon {
+  background-color: lightsalmon;
+}
+#lightyellow,
+#Blightyellow {
+  background-color: lightyellow;
+}
+#lightgreen,
+#Blightgreen {
+  background-color: lightgreen;
+}
+#lightskyblue,
+#Blightskyblue {
+  background-color: lightskyblue;
+}
+#lightgray,
+#Blightgray {
+  background-color: lightgray;
+}
+.boxColors {
+  display: flex;
+  margin-left: 10px;
+}
+.colortextdiv {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 8px;
+}
+h2,
+h3 {
+  font-size: 24px;
+}
+#colorHead,
+#colorBackHead {
+  display: flex;
+  justify-content: space-between;
+}
+.hr {
+  border: 3px solid lightgray;
+  margin: 10px 0px 25px 0px;
+}
+#colorClose {
+  font-size: 28px;
+}
+#boxSelectColorText,
+#boxSelectColorBack {
+  background-color: white;
+  border-radius: 8px;
+  padding: 50px;
+  width: 600px;
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 400px;
+  display: none;
+}
+#boxImageBack,
+#FileChooseBack {
+  display: none;
+}
+.hrBack {
+  border: 1px solid gray;
+}
+
+.buttonOpenColorImagexBack {
+  padding: 5px 10px;
+  display: inline;
+  font-weight: 500;
+}
+h3 {
+  margin-bottom: 20px;
+}
+#boxColorBack {
+  display: none;
+}
+
+.imgBack {
+  width: 230px;
+  border-radius: 8px;
+}
+.boxImages {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/* Forma Sing Up */
+#formaSingIn {
+  width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 50px;
+  position: absolute;
+  z-index: 10;
+  left: 550px;
+  top: 75px;
+  display: none;
+}
+.h1SingIn {
+  text-align: center;
+}
+h6 {
+  color: red;
+  font-weight: 700;
+  display: none;
+}
+#singLogin,
+#singPassword {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#buttonSingUp {
+  width: 100%;
+  padding: 5px;
+  color: white;
+  background-color: rgb(59, 53, 53);
+}
+#textTag {
+  width: 100%;
+  background-color: rgb(241, 229, 229);
+  border: 0px;
+  height: 500px;
+  font-size: 16px;
+  display: none;
+}
+#buttonsSing {
+  display: none;
+}
+
+/* Create Table */
+#boxTable {
+  width: 830px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 300px;
+  padding: 50px;
+  display: none;
+}
+.pT {
+  margin-bottom: 10px;
+}
+.boxTable1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.inputTable {
+  width: 350px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.selectTable {
+  width: 150px;
+  padding: 10px;
+  border-radius: 4px;
+}
+#buttonResetTable,
+#buttonCreateTable {
+  width: 350px;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+  color: white;
+}
+#buttonResetTable {
+  background-color: red;
+  margin-right: 25px;
+  font-weight: 500;
+}
+#buttonCreateTable {
+  background-color: green;
+}
+
+/* Create OL */
+#boxOl,
+#boxUl {
+  width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 10;
+  left: 500px;
+  top: 100px;
+  padding: 50px;
+  display: none;
+}
+
+.inputList,
+.selectList {
+  width: 300px;
+  padding: 10px;
+  border-radius: 4px;
+}
+#buttonResetOL,
+#buttonCreateOL,
+#buttonResetUL,
+#buttonCreateUL {
+  width: 135px;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  margin-top: 25px;
+}
+#buttonResetOL,
+#buttonResetUL {
+  background-color: red;
+  margin-right: 20px;
+}
+#buttonCreateOL,
+#buttonCreateUL {
+  background-color: green;
+}
+
+/* Button Open_lock */
+#openlockEnd {
+  width: 300px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 30px;
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 600px;
+  display: none;
+}
+#clickCancel,
+#clickSingUp {
+  width: 100px;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+}
+#clickCancel {
+  background-color: rgb(59, 53, 53);
+  margin-right: 20px;
+}
+#clickSingUp {
+  background-color: rgb(241, 229, 229);
+  color: rgb(59, 53, 53);
+}
+
+#blah {
+  width: 100%;
+  height: 100%;
+  position: static;
+  float: left;
+  display: none;
+}
+#push,
+#inpF {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: white;
+}

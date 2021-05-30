@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ccdf6d5afb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="buttonHeader">
+        <div class="boxTextButtons boxButtons1">
+          <button class="textButtons" id="buttonCode" disabled>
+            <i class="fas fa-code" id="buttonCod"></i>
+          </button>
+        </div>
+        <div class="boxTextButtons boxButtons2">
+          <button class="textButtons" id="buttonTextBold">
+            <i class="fas fa-bold"></i>
+          </button>
+          <button class="textButtons" id="buttonTextItalic">
+            <i class="fas fa-italic"></i>
+          </button>
+          <button class="textButtons" id="buttonTextUnderline">
+            <i class="fas fa-underline"></i>
+          </button>
+          <button class="textButtons" id="buttonTextLine">
+            <i class="fas fa-strikethrough"></i>
+          </button>
+        </div>
+        <div class="boxTextButtons boxButtons3">
+          <button class="textButtons" id="buttonTexeAlingLeft">
+            <i class="fas fa-align-left"></i>
+          </button>
+          <button class="textButtons" id="buttonTextAlingCenter">
+            <i class="fas fa-align-center"></i>
+          </button>
+          <button class="textButtons" id="buttonTextAlingRight">
+            <i class="fas fa-align-right"></i>
+          </button>
+        </div>
+        <div class="boxTextButtons boxButtons4">
+          <button class="textButtons" id="buttonSelectFont">
+            <i class="fas fa-font"> </i>
+          </button>
+          <button class="textButtons" id="buttonSelectFontSize">
+            <i class="fas fa-text-height"></i>
+          </button>
+          <button class="textButtons" id="buttonSelectPaletes">
+            <i class="fas fa-palette"></i>
+          </button>
+          <button class="textButtons" id="buttonSelectColorImageBack">
+            <i class="fas fa-image"></i>
+          </button>
+        </div>
+        <div class="boxTextButtons boxButtons5">
+          <button class="textButtons" id="buttonLock">
+            <i class="fas fa-lock"></i>
+          </button>
+          <button class="textButtons" id="openlock">
+            <i class="fas fa-lock-open"></i>
+          </button>
+        </div>
+      </div>
+      <div class="boxTextButtons" id="buttonsSing">
+        \
+        <div class="boxButtons6">
+          <button class="textButtons" id="buttonSave">
+            <i class="fas fa-save"></i>
+          </button>
+          <button class="textButtons" id="buttonTable">
+            <i class="fas fa-table"></i>
+          </button>
+          <button class="textButtons" id="buttonOL">
+            <i class="fas fa-list-ol"></i>
+          </button>
+          <button class="textButtons" id="buttonUL">
+            <i class="fas fa-list-ul"></i>
+          </button>
+        </div>
+      </div>
+      <!-- select font-family and font-size -->
+      <select id="selectFont">
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Tahoma">Tahoma</option>
+        <option value="Times">Times</option>
+        <option value="Calibri">Calibri</option>
+      </select>
+      <select id="selectFontSize">
+        <option value="12px">12px</option>
+        <option value="16px">16px</option>
+        <option value="20px">20px</option>
+        <option value="24px">24px</option>
+        <option value="28px">28px</option>
+      </select>
+      <!-- Color Box Text -->
+      <div id="boxSelectColorText">
+        <div>
+          <div id="colorHead">
+            <h2>Choose text color</h2>
+            <div><i class="fas fa-times" id="colorClose"></i></div>
+          </div>
+          <hr class="hr" />
+          <div class="boxColor" id="boxColor">
+            <div class="boxColors" id="boxColor1">
+              <div id="darkred" class="colortextdiv"></div>
+              <div id="darkorange" class="colortextdiv"></div>
+              <div id="darkyellow" class="colortextdiv"></div>
+              <div id="darkgreen" class="colortextdiv"></div>
+              <div id="darkblue" class="colortextdiv"></div>
+              <div id="darkgray" class="colortextdiv"></div>
+            </div>
+            <div class="boxColors">
+              <div id="red" class="colortextdiv"></div>
+              <div id="orange" class="colortextdiv"></div>
+              <div id="yellow" class="colortextdiv"></div>
+              <div id="green" class="colortextdiv"></div>
+              <div id="blue" class="colortextdiv"></div>
+              <div id="gray" class="colortextdiv"></div>
+            </div>
+            <div class="boxColors">
+              <div id="lightpink" class="colortextdiv"></div>
+              <div id="lightsalmon" class="colortextdiv"></div>
+              <div id="lightyellow" class="colortextdiv"></div>
+              <div id="lightgreen" class="colortextdiv"></div>
+              <div id="lightskyblue" class="colortextdiv"></div>
+              <div id="lightgray" class="colortextdiv"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Box Color/Image/File -->
+      <div id="boxSelectColorBack">
+        <div>
+          <div id="colorBackHead">
+            <h3>Choose background color or image</h3>
+            <div><i class="fas fa-times" id="colorColorBackClose"></i></div>
+          </div>
+          <div id="buttonsOpenColor">
+            <div id="buttonOpenColorBack" class="buttonOpenColorImagexBack">
+              Color
+            </div>
+            <div id="buttonOpenImagesBack" class="buttonOpenColorImagexBack">
+              Images
+            </div>
+            <div id="buttonOpenFilesBack" class="buttonOpenColorImagexBack">
+              Files
+            </div>
+          </div>
+          <hr class="hrBack" />
+          <div class="boxColor" id="boxColorBack">
+            <div class="boxColors" id="boxColorBack1">
+              <div id="Bdarkred" class="colortextdiv"></div>
+              <div id="Bdarkorange" class="colortextdiv"></div>
+              <div id="Bdarkyellow" class="colortextdiv"></div>
+              <div id="Bdarkgreen" class="colortextdiv"></div>
+              <div id="Bdarkblue" class="colortextdiv"></div>
+              <div id="Bdarkgray" class="colortextdiv"></div>
+            </div>
+            <div class="boxColors">
+              <div id="Bred" class="colortextdiv"></div>
+              <div id="Borange" class="colortextdiv"></div>
+              <div id="Byellow" class="colortextdiv"></div>
+              <div id="Bgreen" class="colortextdiv"></div>
+              <div id="Bblue" class="colortextdiv"></div>
+              <div id="Bgray" class="colortextdiv"></div>
+            </div>
+            <div class="boxColors">
+              <div id="Blightpink" class="colortextdiv"></div>
+              <div id="Blightsalmon" class="colortextdiv"></div>
+              <div id="Blightyellow" class="colortextdiv"></div>
+              <div id="Blightgreen" class="colortextdiv"></div>
+              <div id="Blightskyblue" class="colortextdiv"></div>
+              <div id="Blightgray" class="colortextdiv"></div>
+            </div>
+          </div>
+
+          <!-- ImageBack -->
+          <div id="boxImageBack">
+            <div class="boxImages">
+              <div id="img1">
+                <img src="./img/img1.jpg" alt="photo1" class="imgBack" />
+              </div>
+              <div id="img2">
+                <img src="./img/img2.jpg" alt="photo2" class="imgBack" />
+              </div>
+            </div>
+            <div class="boxImages">
+              <div id="img3">
+                <img src="./img/img3.jpg" alt="photo3" class="imgBack" />
+              </div>
+              <div id="img4">
+                <img src="./img/img4.jpg" alt="photo4" class="imgBack" />
+              </div>
+            </div>
+            <div class="boxImages">
+              <div id="img5">
+                <img src="./img/img5.jpg" alt="photo5" class="imgBack" />
+              </div>
+              <div id="img6">
+                <img src="./img/img6.jpg" alt="photo6" class="imgBack" />
+              </div>
+            </div>
+          </div>
+
+          <!-- FileBack -->
+          <div id="FileChooseBack">
+            <input id="inpF" type="file" onchange="readURL(this);" />
+            <button id="push">Browes</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sing in -->
+      <div id="formaSingIn">
+        <h1 class="h1SingIn">Sing In</h1>
+        <hr />
+        <input
+          type="text"
+          placeholder="Login here..."
+          value=""
+          id="singLogin"
+        />
+        <input
+          type="password"
+          placeholder="Password here..."
+          value=""
+          id="singPassword"
+        />
+        <h6 id="notext">Value is empty</h6>
+        <h6 id="falsetext">Please check your login or password</h6>
+        <button id="buttonSingUp">Sing up</button>
+      </div>
+
+      <!-- Table -->
+      <div id="boxTable">
+        <div class="boxTable1">
+          <h3>Create table</h3>
+          <div><i class="fas fa-times" id="createTableClose"></i></div>
+        </div>
+        <hr />
+        <div class="boxTable1">
+          <div class="answerTable">
+            <p class="pT">Count TR:</p>
+            <input
+              type="text"
+              placeholder="Count TR:"
+              id="countTR"
+              value=""
+              class="inputTable"
+            />
+          </div>
+          <div class="answerTable">
+            <p class="pT">Count TD:</p>
+            <input
+              type="text"
+              placeholder="Count TD:"
+              id="countTD"
+              value=""
+              class="inputTable"
+            />
+          </div>
+        </div>
+        <div class="boxTable1">
+          <div class="answerTable">
+            <p class="pT">Width of TR:</p>
+            <input
+              type="text"
+              placeholder="Width of TR: 200px"
+              id="widthOfTR"
+              class="inputTable"
+              value=""
+            />
+          </div>
+          <div class="answerTable">
+            <p class="pT">Height of TD:</p>
+            <input
+              type="text"
+              placeholder="Height of TR: 200px"
+              id="heightOfTD"
+              class="inputTable"
+              value=""
+            />
+          </div>
+        </div>
+        <div class="boxTable1">
+          <div class="answerTable">
+            <p class="pT">Width of border:</p>
+            <input
+              type="text"
+              placeholder="Width: 2px"
+              id="WidthBorder"
+              class="inputTable"
+              value=""
+            />
+          </div>
+          <div>
+            <p class="pT">Type of border:</p>
+            <select class="selectTable" id="borderStyle">
+              <option id="borderSolid" value="solid">solid</option>
+              <option id="borderNone" value="none">none</option>
+              <option id="borderDotted" value="dotted">dotted</option>
+            </select>
+          </div>
+          <div>
+            <p class="pT">Color of border:</p>
+            <select class="selectTable" id="borderColor">
+              <option id="boderBlack" value="black">black</option>
+              <option id="borderGray" value="gray">gray</option>
+              <option id="borderWhite" value="red">red</option>
+            </select>
+          </div>
+        </div>
+        <h6 id="noValueTable">invalib value</h6>
+        <button id="buttonResetTable">Reset</button>
+        <button id="buttonCreateTable">Create table</button>
+      </div>
+      <!-- Create OL -->
+      <div id="boxOl">
+        <div class="boxTable1">
+          <h3>Create OL</h3>
+          <div><i class="fas fa-times" id="closeOL"></i></div>
+        </div>
+        <hr />
+        <div class="boxTable1">
+          <div class="answerTable">
+            <p class="pT">Count Li item:</p>
+            <input
+              type="text"
+              placeholder="Type here..."
+              id="OLli"
+              class="inputList"
+              value=""
+            />
+          </div>
+        </div>
+        <div>
+          <p class="pT">Type mark of list:</p>
+          <select class="selectList" id="listStyleType">
+            <option id="styleCircle" value="circle">circle</option>
+            <option id="styleDisc" value="disc">disc</option>
+            <option id="styleSquare" value="square">square</option>
+          </select>
+        </div>
+        <h6 id="noValueOL">invalib value</h6>
+        <button id="buttonResetOL">Reset</button>
+        <button id="buttonCreateOL">Create OL</button>
+      </div>
+      <div id="boxUl">
+        <div class="boxTable1">
+          <h3>Create UL</h3>
+          <div><i class="fas fa-times" id="closeUL"></i></div>
+        </div>
+        <hr />
+        <div class="boxTable1">
+          <div class="answerTable">
+            <p class="pT">Count Li item:</p>
+            <input
+              type="text"
+              placeholder="Type here..."
+              id="ULli"
+              class="inputList"
+              value=""
+            />
+          </div>
+        </div>
+        <div>
+          <p class="pT">Type mark of list:</p>
+          <select class="selectList" id="listUlStyleType">
+            <option id="styleDecimal" value="decimal">decimal</option>
+            <option id="styleUpperRoman" value="upper-roman">
+              upper-roman
+            </option>
+            <option id="georgian" value="georgian">georgian</option>
+          </select>
+        </div>
+        <h6 id="noValueUL">invalib value</h6>
+        <button id="buttonResetUL">Reset</button>
+        <button id="buttonCreateUL">Create UL</button>
+      </div>
+      <div id="openlockEnd">
+        <button id="clickCancel">Cancel</button>
+        <button id="clickSingUp">Sing up</button>
+      </div>
+    </header>
+    <img id="blah" src="#" alt="your image" />
+    <main>
+      <div id="text">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div>
+        <textarea id="textTag"></textarea>
+      </div>
+    </main>
+    <script src="./js/divColorsImage.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
